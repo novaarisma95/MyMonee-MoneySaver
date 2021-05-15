@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfilViewController" customModule="MyMonee_MoneySaver" customModuleProvider="target">
+            <connections>
+                <outlet property="editProfilView" destination="sx5-mX-Cuj" id="VjM-gB-buh"/>
+                <outlet property="inputName" destination="e3W-xl-Dhi" id="GXh-QI-Ki1"/>
+                <outlet property="inputPictures" destination="eJV-WB-Wow" id="9Zu-E2-aph"/>
+                <outlet property="inputStatus" destination="5Ke-NI-pvw" id="eAP-IV-Ipk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sx5-mX-Cuj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="christopher-campbell-rDEOVtE7vOs-unsplash 1" translatesAutoresizingMaskIntoConstraints="NO" id="eJV-WB-Wow" userLabel="ImageProfile">
+                            <rect key="frame" x="152" y="63" width="110" height="101"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="XG8-A1-JYG"/>
+                                <constraint firstAttribute="height" constant="101" id="wKs-aw-8Tk"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dW-hp-KVg" userLabel="EditButton">
+                            <rect key="frame" x="345" y="42" width="54" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54" id="bFi-mn-fzC"/>
+                                <constraint firstAttribute="height" constant="21" id="m9C-Uf-UZk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                            <state key="normal" title="Selesai">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonDone:" destination="-1" eventType="touchUpInside" id="5jN-4l-Qzc"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3W-xl-Dhi">
+                            <rect key="frame" x="16" y="194" width="382" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="3ci-ty-L85"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input Your Status" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ke-NI-pvw">
+                            <rect key="frame" x="16" y="222" width="382" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="JdC-yU-rj8"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="311" id="05s-YY-KfK"/>
+                        <constraint firstItem="5Ke-NI-pvw" firstAttribute="top" secondItem="e3W-xl-Dhi" secondAttribute="bottom" constant="4" id="6bS-0N-xAd"/>
+                        <constraint firstItem="e3W-xl-Dhi" firstAttribute="centerX" secondItem="eJV-WB-Wow" secondAttribute="centerX" id="GmD-Je-HYT"/>
+                        <constraint firstItem="5Ke-NI-pvw" firstAttribute="trailing" secondItem="e3W-xl-Dhi" secondAttribute="trailing" id="IK6-gZ-4DO"/>
+                        <constraint firstItem="eJV-WB-Wow" firstAttribute="top" secondItem="sx5-mX-Cuj" secondAttribute="top" constant="63" id="LsK-RG-WNF"/>
+                        <constraint firstAttribute="trailing" secondItem="e3W-xl-Dhi" secondAttribute="trailing" constant="16" id="QoN-wd-8mj"/>
+                        <constraint firstItem="eJV-WB-Wow" firstAttribute="centerX" secondItem="sx5-mX-Cuj" secondAttribute="centerX" id="TpW-qC-Uux"/>
+                        <constraint firstItem="5dW-hp-KVg" firstAttribute="top" secondItem="sx5-mX-Cuj" secondAttribute="top" constant="42" id="Y35-aT-O2N"/>
+                        <constraint firstItem="5Ke-NI-pvw" firstAttribute="leading" secondItem="e3W-xl-Dhi" secondAttribute="leading" id="oqy-Sa-Ibz"/>
+                        <constraint firstItem="e3W-xl-Dhi" firstAttribute="top" secondItem="eJV-WB-Wow" secondAttribute="bottom" constant="30" id="pdb-BX-cfC"/>
+                        <constraint firstItem="e3W-xl-Dhi" firstAttribute="leading" secondItem="sx5-mX-Cuj" secondAttribute="leading" constant="16" id="tvP-nt-6cG"/>
+                        <constraint firstAttribute="trailing" secondItem="5dW-hp-KVg" secondAttribute="trailing" constant="15" id="wLl-3j-FsM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sx5-mX-Cuj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LAx-8J-TDM"/>
+                <constraint firstItem="sx5-mX-Cuj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uMd-Oj-xev"/>
+                <constraint firstItem="sx5-mX-Cuj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="y7C-Bu-DPI"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="christopher-campbell-rDEOVtE7vOs-unsplash 1" width="101" height="101"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
